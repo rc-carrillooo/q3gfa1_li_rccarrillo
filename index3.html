@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Part 3</title>
 </head>
 <body>
     <script>
@@ -18,13 +18,13 @@
         let text = "Do you agree to share your personal information with the site?";
             if (confirm(text) == true) {
                 if(inches>0)
-                    document.write('Name: ' + name + '</br>' + 'Height: ' + feet + '\'' + inches + '\"' + '</br>' + 'Weight: ' + pounds + ' lbs');
+                    console.log('Name: ' + name + '\nHeight: ' + feet + '\'' + inches + '\"' + '\nWeight: ' + pounds + ' lbs');
                 else
-                    document.write('Name: ' + name + '</br>' + 'Height: ' + feet + '\'' + inches + '\"' + '</br>' + 'Weight: ' + pounds + ' lbs');
+                    console.log('Name: ' + name + '\nHeight: ' + feet + '\'' + inches + '\"' + '\nWeight: ' + pounds + ' lbs');
             }
 
             else{
-                document.write('User does not wish to share his/her information.');
+                console.log('User does not wish to share his/her information.');
             }
 
     </script>
