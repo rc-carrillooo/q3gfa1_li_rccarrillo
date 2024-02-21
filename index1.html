@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part 1</title>
+</head>
+<body>
+    <script>
+        var name = prompt("Input name: ", name);
+        var height = prompt("Input height: ", height);
+        var weight = prompt("Input weight: ", weight);
+
+        var feet = Math.floor(height/12); // converts inches to feet thru rounding off
+        var inches = height % 12; // finds the remainder to serve as the inches part of the height
+        var pounds = weight * 2.205;
+
+        if(inches>0)
+            alert('Name: ' + name + '\nHeight: ' + feet + '\'' + inches + '\"' + '\nWeight: ' + pounds + ' lbs')
+        else
+            alert('Name: ' + name + '\nHeight: ' + feet + '\nWeight: ' + pounds + ' lbs')
+
+    </script>
+</body>
+</html>

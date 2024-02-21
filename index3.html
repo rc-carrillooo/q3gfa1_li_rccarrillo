@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var name = prompt("Input name: ", name);
+        var height = prompt("Input height: ", height);
+        var weight = prompt("Input weight: ", weight);
+
+        var feet = Math.floor(height/12); // converts inches to feet thru rounding off
+        var inches = height % 12; // finds the remainder to serve as the inches part of the height
+        var pounds = weight * 2.205;
+
+        let text = "Do you agree to share your personal information with the site?";
+            if (confirm(text) == true) {
+                if(inches>0)
+                    document.write('Name: ' + name + '</br>' + 'Height: ' + feet + '\'' + inches + '\"' + '</br>' + 'Weight: ' + pounds + ' lbs');
+                else
+                    document.write('Name: ' + name + '</br>' + 'Height: ' + feet + '\'' + inches + '\"' + '</br>' + 'Weight: ' + pounds + ' lbs');
+            }
+
+            else{
+                document.write('User does not wish to share his/her information.');
+            }
+
+    </script>
+</body>
+</html>
